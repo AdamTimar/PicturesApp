@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_black"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/logo6"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginTop="@dimen/logo_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/feedBackForm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feedBack_form_height"
+        android:layout_marginStart="@dimen/form_margin_left"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:layout_marginEnd="@dimen/form_margin_right"
+        android:background="@color/form_background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo6" />
+
+    <TextView
+        android:id="@+id/feedBackTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/register_text_margin_start"
+        android:layout_marginTop="@dimen/register_input_margin_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/register_text_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id = "@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_color"
+        android:layout_marginStart="@dimen/register_text_input_margin_start"
+        android:layout_marginEnd="@dimen/register_text_input_margin_end"
+        app:layout_constraintTop_toBottomOf="@id/feedBackTitleTextView"
+        android:layout_marginTop="@dimen/we_have_sent_mail_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/backToLoginButton"
+        style="@style/roundedButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/email_me_button_margin_top"
+        android:layout_marginStart="@dimen/register_text_input_margin_start"
+        android:layout_marginEnd="@dimen/register_text_input_margin_end"
+        android:text="@string/back_to_log_in_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

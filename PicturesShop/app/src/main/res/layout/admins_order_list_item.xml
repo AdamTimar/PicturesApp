@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@color/form_background_color"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/ordererNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orderDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Order date: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordererNameTextView" />
+
+    <TextView
+        android:id="@+id/orderPriceTextViewAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Price:"
+        app:layout_constraintStart_toStartOf="@+id/locationTextView"
+        app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Location:"
+            app:layout_constraintStart_toStartOf="@+id/orderDateTextView"
+        app:layout_constraintTop_toBottomOf="@+id/orderDateTextView" />
+
+    <TextView
+        android:id="@+id/orderDateContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/orderDateTextView"
+        app:layout_constraintTop_toTopOf="@+id/orderDateTextView" />
+
+    <TextView
+        android:id="@+id/locationContentTextView"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/orderDateContentTextView"
+        app:layout_constraintTop_toTopOf="@+id/locationTextView" />
+
+    <TextView
+        android:id="@+id/orderPriceAdminContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/locationContentTextView"
+        app:layout_constraintTop_toTopOf="@+id/orderPriceTextViewAdmin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

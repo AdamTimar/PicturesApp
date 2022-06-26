@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.ProfileFragment"
+        android:background="@color/black">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="@dimen/avatar_big_width"
+            android:layout_height="@dimen/avatar_big_height"
+            android:layout_marginTop="@dimen/avatar_big_margin_top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView" />
+
+        <TextView
+            android:id="@+id/fullNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+            android:layout_marginTop="@dimen/profile_name_textview_margin_top"
+            android:textSize="@dimen/profile_name_textview_text_size"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/profileEmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_hint_text"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/profile_details_header_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTextView"
+            android:layout_marginTop="@dimen/profile_email_header_margin_top"
+            android:layout_marginStart="@dimen/profile_email_header_margin_start"/>
+
+        <TextView
+            android:id="@+id/profileEmailTextViewContent"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/profile_email_header_margin_start"
+            android:layout_marginEnd="@dimen/profile_email_header_margin_start"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/profile_details_margin_top"
+            android:textSize="@dimen/profile_details_text_size"
+            app:layout_constraintStart_toStartOf="@+id/profileEmailTextView"
+            app:layout_constraintTop_toBottomOf="@+id/profileEmailTextView" />
+
+        <TextView
+            android:id="@+id/profileBirthDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth date"
+            android:layout_marginTop="@dimen/profile_username_phone_number_margin_top"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/profile_details_header_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/profile_email_header_margin_start"
+            app:layout_constraintTop_toBottomOf="@+id/profileEmailTextViewContent" />
+
+        <TextView
+            android:id="@+id/profileBirthDateTextViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_details_text_size"
+            android:layout_marginTop="@dimen/profile_details_margin_top"
+            app:layout_constraintStart_toStartOf="@+id/profileBirthDateTextView"
+            app:layout_constraintTop_toBottomOf="@+id/profileBirthDateTextView"
+            android:layout_marginStart="@dimen/profile_email_header_margin_start"
+            android:layout_marginEnd="@dimen/profile_email_header_margin_start"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

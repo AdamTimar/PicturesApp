@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="registerEditTextStyle">
+        <item name="android:layout_height">@dimen/user_details_text_input_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:background">@drawable/user_details_text_input_layout_border</item>
+        <item name="android:padding">@dimen/user_details_text_input_padding</item>
+    </style>
+
+    <style name="addressEditTextStyle">
+        <item name="android:layout_height">@dimen/user_details_text_input_height</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:background">@drawable/address_layout_border</item>
+        <item name="android:padding">@dimen/user_details_text_input_padding</item>
+    </style>
+
+    <style name="registerTextInputLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="addressTextInputLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:background">@drawable/address_text_inp_bg</item>
+    </style>
+
+    <style name="roundedButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_button_border</item>
+    </style>
+
+    <style name="deleteReviewButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_button_border_delete_review</item>
+    </style>
+
+    <style name="updateReviewButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_button_border_update_review</item>
+    </style>
+
+    <style name="roundedButtonNoBackGroundColorStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_button_no_bg_color_border</item>
+    </style>
+
+    <style name="ShapeAppearance.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="orderNowButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/order_now_button_border</item>
+    </style>
+
+    <style name="spinnerStyle">
+        <item name="android:background">@drawable/spinner_border</item>
+    </style>
+
+
+
+
+</resources>

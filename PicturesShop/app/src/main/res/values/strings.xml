@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Pictures App</string>
+    <string name="register_text">Register</string>
+    <string name="birth_date_text">Birth date</string>
+    <string name="password_hint_text">Password</string>
+    <string name="email_hint_text">Email</string>
+    <string name="first_name_hint_text">First name</string>
+    <string name="last_name_hint_text">Last name</string>
+    <string name="already_have_account_text">Already have an account?</string>
+    <string name="log_in_text">Log in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password_text">Forgot password?</string>
+    <string name="click_here_text">Click here</string>
+    <string name="dont_have_account_text">Don\'t have account?</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="forgot_password_text_2">Forgot password</string>
+    <string name="email_me_text">Email me</string>
+    <string name="type_the_code">Type the 8 characters code sent to the given mail to be registered in!</string>
+    <string name="activate_account_text">Activate account</string>
+    <string name="back_to_log_in_text">Back to log in</string>
+    <string name="settings_text">Settings</string>
+    <string name="phone_number_text">Phone number</string>
+    <string name="profile_text">Profile</string>
+    <string name="update_profile_text">Update profile</string>
+    <string name="update_text">update</string>
+    <string name="picture_detail_text">picture detail</string>
+    <string name="available_amount_text">Available amount:</string>
+    <string name="update_picture_text">Update picture</string>
+    <string name="active">Active</string>
+    <string name="verify_email_text">Verify email</string>
+    <string name="code_text">Code</string>
+    <string name="verify_text">Verify</string>
+    <string name="we_will_send_email_password_change">We will send a code to the given mail to change your password!</string>
+    <string name="validate_password_change">Validate password change</string>
+    <string name="new_password_text">New password</string>
+    <string name="type_code_and_new_password">Please type the sent code and the new password!</string>
+</resources>
